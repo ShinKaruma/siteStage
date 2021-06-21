@@ -1,0 +1,44 @@
+body{
+    font-size: 30px;
+    background-color: #c9c9c9;
+}
+
+
+table, th, td{
+    text-align: center;
+    border: 1px solid #000;  
+    border-collapse: collapse;
+}
+
+input{
+    color: black;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+a:link, a:visited {
+  background-color: #2F3136;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav{
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
