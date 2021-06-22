@@ -3,6 +3,11 @@ body{
     background-color: #c9c9c9;
 }
 
+flex{
+    border-color: #2F3136;
+    border-width: medium;
+    display: inline-flex;
+}
 
 table, th, td{
     text-align: center;

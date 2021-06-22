@@ -24,6 +24,7 @@ and open the template in the editor.
         <nav>
             <a href="../index.php">Retourner à l'acceuil</a>
             <a href="AffichageTousLesProjets.php">Afficher tous les projets</a>
+            <a href="ajoutPlateformeEtAjoutConfig.php">Ajouter des plateformes et des configurations</a>
         </nav>
         <section class="ftco-section">
             <div class="container">

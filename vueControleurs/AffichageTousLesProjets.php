@@ -16,6 +16,7 @@ and open the template in the editor.
         <nav>
             <a href="../index.php">Retourner à l'acceuil</a>
             <a href="CalendrierPlanning.php">Afficher le calendrier</a>
+            <a href="ajoutPlateformeEtAjoutConfig.php">Ajouter des plateformes et des configurations</a>
         </nav>
         <div id="infosProjet">
             <table>
