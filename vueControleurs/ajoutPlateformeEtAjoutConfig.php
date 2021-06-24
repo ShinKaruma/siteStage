@@ -17,9 +17,9 @@ and open the template in the editor.
     </head>
     <body>
         <nav>
-            <a href="../index.php">Retourner à l'acceuil</a>
-            <a href="AffichageTousLesProjets.php">Afficher tous les projets</a>
-            <a href="CalendrierPlanning.php">Afficher le calendrier</a>
+            <a class="nav" href="../index.php">Retourner à l'acceuil</a>
+            <a class="nav" href="AffichageTousLesProjets.php">Afficher tous les projets</a>
+            <a class="nav" href="CalendrierPlanning.php">Afficher le calendrier</a>
         </nav>
         <table>
             <td>

@@ -145,7 +145,7 @@ function getEssaiAjd($lePdo, $ajd) {
     return $result;
 }
 
-function ajoutPlateforme($lePdo, $idPlateforme, $libellePlat){
+function ajoutPlateforme($lePdo, $idPlateforme, $libellePlat) {
     $requete = "insert into plateforme(idPlateforme, libellePlat) values (:idPlateforme, :libellePlat)";
     $etat = $lePdo->prepare($requete);
     $etat->bindValue(":idPlateforme", $idPlateforme);
@@ -155,7 +155,7 @@ function ajoutPlateforme($lePdo, $idPlateforme, $libellePlat){
     return $executionOk;
 }
 
-function ajoutCouleur($lePdo, $idPlateforme, $valCouleur){
+function ajoutCouleur($lePdo, $idPlateforme, $valCouleur) {
     $requete = "insert into couleur(valCouleur, idPlateforme) values (:valCouleur, :idPlateforme)";
     $etat = $lePdo->prepare($requete);
     $etat->bindValue(":idPlateforme", $idPlateforme);
@@ -165,7 +165,7 @@ function ajoutCouleur($lePdo, $idPlateforme, $valCouleur){
     return $executionOk;
 }
 
-function ajoutConfig($lePdo, $idPlateforme, $libelleConfig){
+function ajoutConfig($lePdo, $idPlateforme, $libelleConfig) {
     $requete = "insert into config(idPlateforme, libelleConfig) values (:idPlateforme, :libelleConfig)";
     $etat = $lePdo->prepare($requete);
     $etat->bindValue(":idPlateforme", $idPlateforme);
@@ -173,4 +173,13 @@ function ajoutConfig($lePdo, $idPlateforme, $libelleConfig){
     $executionOk = $etat->execute();
     $etat->closeCursor();
     return $executionOk;
-    }
+}
+
+
+function delEssaisTermines($lePdo){
+    $requete = "delete from essai where Termine = 1";
+    $etat = $lePdo->prepare($requete);
+    $executionOk = $etat->execute();
+    $etat->closeCursor();
+    return $executionOk;
+}

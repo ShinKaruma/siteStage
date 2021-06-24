@@ -13,10 +13,10 @@ $lePdo = connexionBDD();
     </head>
     <body>
         <nav>
-            <a href="vueControleurs/affichageTousLesProjets.php">Afficher tous les projets</a>
-            <a href="vueControleurs/CalendrierPlanning.php">Afficher le Calendrier</a>
-            <a href="vueControleurs/ajoutPlateformeEtAjoutConfig.php">Ajouter des plateformes et des configurations</a>
-            <a href="doc_technique.odt" download='doc_technique.odt'>Télécharger la documentation technique</a>
+            <a class="nav" href="vueControleurs/affichageTousLesProjets.php">Afficher tous les projets</a>
+            <a class="nav" href="vueControleurs/CalendrierPlanning.php">Afficher le Calendrier</a>
+            <a class="nav" href="vueControleurs/ajoutPlateformeEtAjoutConfig.php">Ajouter des plateformes et des configurations</a>
+            <a class="nav" href="doc_technique.odt" download='doc_technique.odt'>Télécharger la documentation technique</a>
         </nav>
         <br>
 

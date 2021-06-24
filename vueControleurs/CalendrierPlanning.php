@@ -9,6 +9,9 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="src/jquery.table2excel.js"></script>
+
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -22,9 +25,9 @@ and open the template in the editor.
         $lePdo = connexionBDD();
         ?>
         <nav>
-            <a href="../index.php">Retourner à l'acceuil</a>
-            <a href="AffichageTousLesProjets.php">Afficher tous les projets</a>
-            <a href="ajoutPlateformeEtAjoutConfig.php">Ajouter des plateformes et des configurations</a>
+            <a class="nav" href="../index.php">Retourner à l'acceuil</a>
+            <a class="nav" href="AffichageTousLesProjets.php">Afficher tous les projets</a>
+            <a class="nav" href="ajoutPlateformeEtAjoutConfig.php">Ajouter des plateformes et des configurations</a>
         </nav>
         <section class="ftco-section">
             <div class="container">
@@ -86,7 +89,7 @@ and open the template in the editor.
                                         <input class="input" type="text" id="essai" maxlength="36" placeholder="Identifiant de l'essai">
                                         <label class="form-label" id="valueFromMyButton" for="projet">Saisir l'identifiant du projet</label>
                                         <input type="text" class="input" id="projet" name="projet" placeholder="Identifiant du projet">
-                                         
+
                                         <label class="form-label" id="valueFromMyButton" for="plateforme">Choisir la plateforme</label>
                                         <select id="plateforme" name="plateforme" onchange="getConfig(this.value)">
                                             <?php

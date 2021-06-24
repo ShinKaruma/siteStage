@@ -21,14 +21,18 @@ input{
     box-sizing: border-box;
 }
 
-a:link, a:visited {
-  background-color: #2F3136;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.nav:link, .nav:visited {
+    background-color: #2F3136;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
+.nav:hover {
+    color: #0056b3;
+}
+
 
 nav{
     margin: 0 auto;
@@ -39,11 +43,11 @@ nav{
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
